@@ -1,0 +1,146 @@
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initialscale=1.0">
+    <style>
+        #div01, #div02, #div03, #div04, #div05, #div06{
+        width: 100px;
+        height: 100px;
+        margin: 50px;
+        background: linear-gradient(130deg,#CD96CD,#B23AEE 41.07%,#9A32CD 76.05%);
+        border: 1px solid black;
+        color: aliceblue;
+        text-align: center;
+        font-weight: bolder;
+        vertical-align: middle;
+        display: table-cell;
+        border: hidden;
+        border-radius: 5px;
+        }
+        /*1-A*/
+        #div01{
+            width: 100px ;
+            height: 100px;
+            margin: 50px;
+            background-color: red;
+            transition: width 2s ;  
+        }
+        #div01:hover{
+            width: 400px;
+        }
+        /*1-B-C*/
+        #div01{
+        width: 100px;
+        height: 100px;
+        background: red;
+        transition: width 2s;
+        transition-timing-function: ease-in-out;
+        transition-delay: 0.5s;
+
+        }
+        #div01:hover{
+        width: 400px;
+        }
+        /*1-D-E*/
+        #div02 {
+            width: 100px;
+            height: 100px;
+            background: red;
+            padding: 10px;
+            display: block;
+            border-radius: 10px;
+            transition: 2s;
+        }
+        #div02:hover {
+            background: linear-gradient(130deg,black, red 35.07%, orange 66.05%);
+            width: 150px;
+            height: 150px;
+            transition-timing-function: ease-in-out;
+            transition-delay: 0.5s;
+            width: 300px;
+        }
+        /*2-A*/
+        #div03 {
+            width: 100px;
+            height: 100px;
+            background: red;
+            padding: 10px;
+            margin-top: 10px;
+            animation-name: animacao1;
+            animation-duration: 3s;
+            animation-delay: 0.2s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes animacao1 {
+        from {background: red;}
+        to {background: blue;}
+        }
+        /*2-B*/
+        #div04 {
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            padding: 10px;
+            margin-top: 10px;
+            animation-name: animacao;
+            animation-duration: 5s;
+            animation-timing-function: ease;
+            animation-delay: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-play-state: running;
+        }
+        @keyframes animacao {
+        0% {background: red;width: 0px;height: 0px;}
+        25% {background: blue;width: 100px;height: 100px;}
+        50% {background: green;width: 0px;height: 100px;} 
+        75% {background: yellow;width: 100px;height: 0px;}
+        100% {width: 0px;height: 0px;background: red;}
+        }
+        /*2-C*/
+        #div05 {
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            padding: 10px;
+            margin-top: 10px;
+            animation-name: animacao2;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes animacao2 {
+        0%   {background: red; width: 100px;}
+        50%  { background: blue; }
+        100% {background: purple; width: 200px;}
+        }
+        /*2-D*/
+        #div06 {
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            padding: 10px;
+            margin-top: 10px;
+            animation-name: animacao3;
+            animation-duration: 5s;
+            transition-timing-function: ease-in-out;
+            animation-delay: 1s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes animacao3 {
+        0%   { background: red; width: 100px;}
+        50%  { background: blue; }
+        100% { background: purple; width: 200px;}
+        }
+    </style>
+</head>
+<body>
+    <h1><B>Atividade Prática - Transição e animação</h1>
+  <div id="div01"><b>1- A B C</div>
+  <div id="div02"><b>1- D e E</div>
+  <div id="div03"><b>2- A</div>
+  <div id="div04"><b>2- B</div>
+  <div id="div05"><b>2- C</div>
+  <div id="div06"><b>2- D</div>
+</body>
+</html>
